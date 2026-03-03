@@ -47,7 +47,7 @@ const User = () => {
         <table className='table table-bordered'>
         <thead>
             <tr>
-                <th scope='col'>S.No</th>
+                <th scope='col' data-label="S.No">S.No</th>
                 <th scope='col' data-label="Name">Name</th>
                 <th scope='col' data-label="Email">Email</th>
                 <th scope='col' data-label="Actions">Action</th>
