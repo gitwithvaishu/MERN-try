@@ -12,7 +12,7 @@ const User = () => {
   const navigate = useNavigate();
   const fetchData = async ()=> {
       try {
-        const res = await axios.get("http://localhost:3000/api/users");
+        const res = await axios.get("https://mern-try-09sy.onrender.com/api/users");
         setUsers(res.data);
       } catch (error) {
         console.log("Error while fetching.");
