@@ -23,7 +23,7 @@ const User = () => {
   }, []);
 
   const deleteUser = async (userid)=>{
-    await axios.delete(`http://localhost:3000/api/users/${userid}`)
+    await axios.delete(`https://mern-try-09sy.onrender.com/api/users/${userid}`)
     .then((res)=>{
       setUsers((prevUsers)=> prevUsers.filter((user)=>user._id !== userid));
       toast.success(res.data.message,{position:'top-center'});
