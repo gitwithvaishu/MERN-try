@@ -48,9 +48,9 @@ const User = () => {
         <thead>
             <tr>
                 <th scope='col'>S.No</th>
-                <th scope='col'>Name</th>
-                <th scope='col'>Email</th>
-                <th scope='col'>Action</th>
+                <th scope='col' data-label="Name">Name</th>
+                <th scope='col' data-label="Email">Email</th>
+                <th scope='col' data-label="Actions">Action</th>
             </tr>
         </thead>
         <tbody>
