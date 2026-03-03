@@ -27,7 +27,7 @@ const AddUser = () => {
     e.preventDefault();
     try {
 
-      await axios.post("http://localhost:3000/api/user", user)
+      await axios.post("https://mern-try-09sy.onrender.com/api/user", user)
       .then((res)=>{
         toast.success(res.data.message,{position: 'top-center'})
         navigate("/");
