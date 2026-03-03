@@ -16,7 +16,7 @@ app.use(cors({
 // const PORT = process.env.PORT || 3000;
 // const MONGODB_URL = process.env.MONGO_DB_URL;
 
-mongoose.connect(MONGO_DB_URL)
+mongoose.connect(process.env.MONGO_DB_URL)
 	.then(()=> console.log("Mongo DB connected."))
 	.catch((error)=> console.log("Error:", error));
 
