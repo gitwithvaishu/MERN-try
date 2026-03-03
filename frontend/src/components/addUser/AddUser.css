@@ -1,11 +1,13 @@
 .addUser {
   background-color: white;
-  width: 25%;
-  margin: 50px auto;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  width: 90%;
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
+
 .addUserForm .inputGroup {
   width: 100%;
   display: flex;
@@ -13,21 +15,56 @@
 }
 
 .addUserForm .inputGroup label {
-  margin-top: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .addUserForm .inputGroup input {
-  margin-bottom: 5px;
-  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
 }
+
+.addUserForm .inputGroup input:focus {
+  border-color: darkcyan;
+}
+
 .addUserForm .inputGroup button {
-  margin-top: 8px;
+  margin-top: 15px;
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkcyan;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
+
+.addUserForm .inputGroup button:hover {
+  background-color: teal;
+}
+
 .addUser h3 {
-  margin-top: 30px;
+  margin-bottom: 20px;
   text-align: center;
   font-weight: bold;
   color: darkcyan;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 480px) {
+  .addUser {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .addUser h3 {
+    font-size: 18px;
+  }
 }
