@@ -25,7 +25,7 @@ const UpdateUser = () => {
   };
 
   useEffect(()=>{
-    axios.get(`http://localhost:3000/api/users/${id}`)
+    axios.get(`https://mern-try-09sy.onrender.com/api/users/${id}`)
     .then((res)=>{
         setUser(res.data);
     })
@@ -36,7 +36,7 @@ const UpdateUser = () => {
     e.preventDefault();
     try {
 
-      await axios.patch(`http://localhost:3000/api/users/${id}`, user)
+      await axios.patch(`https://mern-try-09sy.onrender.com/api/users/${id}`, user)
       .then((res)=>{
         toast.success(res.data.message,{position: 'top-center'})
         navigate("/");
